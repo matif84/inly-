@@ -1,4 +1,4 @@
-Selfstarter::Application.routes.draw do
+Inly::Application.routes.draw do
   root :to => 'preorder#index'
   match '/preorder'               => 'preorder#index', :via => [:get,:post]
   get 'preorder/checkout'

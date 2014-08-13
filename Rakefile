@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Selfstarter::Application.load_tasks
+Inly::Application.load_tasks
