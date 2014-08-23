@@ -1,4 +1,9 @@
 Inly::Application.routes.draw do
+  get 'auth/:provider/callback', to: 'sessions#create'
+  get 'auth/failure', to: redirect('/')
+  get 'signout', to: 'sessions#destroy', as: 'signout'
+  
+  get "home/show"
   root :to => 'preorder#index'
   match '/preorder'               => 'preorder#index', :via => [:get,:post]
   get 'preorder/checkout'
@@ -7,3 +12,4 @@ Inly::Application.routes.draw do
   match '/preorder/prefill'       => 'preorder#prefill', :via => [:get,:post]
   match '/preorder/postfill'      => 'preorder#postfill', :via => [:get,:post]
 end
+   

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130107010733) do
+ActiveRecord::Schema.define(version: 20140823150012) do
 
   create_table "orders", id: false, force: true do |t|
     t.string   "token"
@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 20130107010733) do
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "provider"
   end
 
 end

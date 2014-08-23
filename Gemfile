@@ -4,6 +4,9 @@ ruby '2.0.0'
 
 gem 'rails', '4.0.0'
 gem 'json', '~> 1.7.7'
+gem 'omniauth-facebook', '~> 1.4.1'
+
+
 
 group :development do
   gem 'sqlite3'
@@ -21,6 +24,8 @@ group :assets do
   gem 'sass-rails',   '~> 4.0.0'
   gem 'coffee-rails', '~> 4.0.0'
   gem 'uglifier', '>= 1.0.3'
+  
+
 end
 
 group :development, :test do
